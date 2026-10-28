@@ -542,29 +542,29 @@ const noAuthorityResults = {
     form: 'No binder - carrier/pool must confirm',
     title: 'FAIR Plan / Residual Market - no binding authority',
     confidence: 'high',
-    note: 'FAIR Plans and other residual-market property pools typically don't grant the agency binding authority. Coverage isn't in effect until the plan itself confirms it - an ACORD 75 would be promising something the agency can't actually deliver.',
+    note: 'FAIR Plans and other residual-market property pools typically don\'t grant the agency binding authority. Coverage isn\'t in effect until the plan itself confirms it - an ACORD 75 would be promising something the agency can\'t actually deliver.',
     directives: [
       'Confirm your state's specific FAIR Plan process - timelines and procedures vary by state',
       'Don't tell the requester coverage is in place until the plan confirms it'
     ],
-    flag: 'Don't issue an ACORD 75 here - it implies the agency can bind coverage on the spot, and for this market it can't.'
+    flag: 'Don\'t issue an ACORD 75 here - it implies the agency can bind coverage on the spot, and for this market it can\'t.'
   },
   flood: {
     form: 'No binder - carrier/pool must confirm',
     title: 'NFIP / Standard Flood - no binding authority',
     confidence: 'high',
-    note: 'Most agencies don't hold binding authority for NFIP or standard-market flood policies. Coverage isn't effective until the carrier or NFIP itself confirms it - an ACORD 75 would be promising something the agency can't actually deliver.',
+    note: 'Most agencies don\'t hold binding authority for NFIP or standard-market flood policies. Coverage isn\'t effective until the carrier or NFIP itself confirms it - an ACORD 75 would be promising something the agency can\'t actually deliver.',
     directives: [
       'Confirm whether your agency specifically holds binding authority with this carrier before doing anything else',
       'If NFIP, remember the standard 30-day wait for new policies to take effect (exceptions apply - e.g. tied to a loan closing)'
     ],
-    flag: 'Don't issue an ACORD 75 here - it implies the agency can bind coverage on the spot, and for this market it can't.'
+    flag: 'Don\'t issue an ACORD 75 here - it implies the agency can bind coverage on the spot, and for this market it can\'t.'
   },
   workcomp: {
     form: 'Route to the fund / pool directly',
     title: 'State Fund / Assigned Risk - no binding or cert-issuing authority',
     confidence: 'high',
-    note: 'Workers' comp written through a state fund or assigned risk (residual market) pool is different from the FAIR Plan/NFIP case: the agency typically has neither binding authority NOR certificate-issuing authority here - even once the policy is already in force. The agency usually cannot produce this document itself, regardless of what's being asked for.',
+    note: 'Workers\' comp written through a state fund or assigned risk (residual market) pool is different from the FAIR Plan/NFIP case: the agency typically has neither binding authority NOR certificate-issuing authority here - even once the policy is already in force. The agency usually cannot produce this document itself, regardless of what\'s being asked for.',
     directives: [
       'Confirm your agency's specific agreement with the fund/pool - a small number of agencies do have delegated authority',
       'If the agency doesn't have that authority, send the requester to the fund/pool directly rather than attempting a binder or certificate',
@@ -607,7 +607,7 @@ const resultMap = {
     form: 'ACORD 27',
     title: 'Evidence of Property Insurance',
     confidence: 'high',
-    note: 'Use ACORD 27 for first-party property coverage (Homeowners/Condo) requested by lenders or mortgagees. It establishes coverage for the mortgagee's financial interest and grants rights to notice of cancellation.',
+    note: 'Use ACORD 27 for first-party property coverage (Homeowners/Condo) requested by lenders or mortgagees. It establishes coverage for the mortgagee\'s financial interest and grants rights to notice of cancellation.',
     directives: [
       'Applies to first-party property only',
       'Provides mortgagee notification rights',
@@ -620,7 +620,7 @@ const resultMap = {
     form: 'ACORD 25',
     title: 'Certificate of Liability Insurance',
     confidence: 'high',
-    note: 'The association's master policy already covers the building itself. What they're actually asking to see is the unit owner's liability coverage - so this is a liability certificate, not property evidence.',
+    note: 'The association\'s master policy already covers the building itself. What they\'re actually asking to see is the unit owner\'s liability coverage - so this is a liability certificate, not property evidence.',
     directives: [
       'Confirm the association isn't also asking about betterments/improvements coverage',
       'Not the same request as a mortgagee - don't default to 27 here'
@@ -653,7 +653,7 @@ const resultMap = {
     form: 'ACORD 24 (+ ACORD 25 if they also need liability)',
     title: 'Evidence of Property Insurance - Certificate Holder Only',
     confidence: 'high',
-    note: 'Even on an HO4 policy, a property manager or landlord asking for proof of insurance gets the commercial-style evidence form. They're a certificate holder confirming coverage exists on the unit's contents - not a party with the kind of financial interest the mortgagee track (27) is built for. If they also want proof of liability, attach a 25 alongside it.',
+    note: 'Even on an HO4 policy, a property manager or landlord asking for proof of insurance gets the commercial-style evidence form. They\'re a certificate holder confirming coverage exists on the unit\'s contents - not a party with the kind of financial interest the mortgagee track (27) is built for. If they also want proof of liability, attach a 25 alongside it.',
     directives: [
       'They are a holder only - nothing on the policy names them',
       'Check AI/WOS boxes only if the holder is individually scheduled on the policy or endorsement - see practice notes above',
@@ -665,7 +665,7 @@ const resultMap = {
     form: 'Manual review',
     title: 'Purpose unclear',
     confidence: 'low',
-    note: 'Confirm what the requester's interest actually is before choosing a form - a property manager gets different treatment than, say, a roommate or a landlord's attorney.',
+    note: 'Confirm what the requester\'s interest actually is before choosing a form - a property manager gets different treatment than, say, a roommate or a landlord\'s attorney.',
     directives: ['Ask what the document needs to show and to whom'],
     flag: null
   },
@@ -673,7 +673,7 @@ const resultMap = {
     form: 'ACORD 29',
     title: 'Evidence of Flood Insurance',
     confidence: 'high',
-    note: 'ACORD 29 is the standard industry form for evidencing flood coverage, whether it's written through the NFIP or a private flood carrier.',
+    note: 'ACORD 29 is the standard industry form for evidencing flood coverage, whether it\'s written through the NFIP or a private flood carrier.',
     directives: [
       'Confirm whether the policy is NFIP or private - some lenders have specific requirements about which is acceptable'
     ],
@@ -683,7 +683,7 @@ const resultMap = {
     form: 'Manual review',
     title: 'Purpose unclear',
     confidence: 'low',
-    note: 'Confirm who's asking and why before choosing a form - flood evidence requests outside a mortgagee context are uncommon.',
+    note: 'Confirm who\'s asking and why before choosing a form - flood evidence requests outside a mortgagee context are uncommon.',
     directives: ['Ask what the document needs to show and to whom'],
     flag: null
   },
@@ -691,19 +691,19 @@ const resultMap = {
     form: 'ACORD 31 (verify) or declarations page',
     title: 'Marine evidence - confirm carrier preference',
     confidence: 'medium',
-    note: 'ACORD 31 is the standard Certificate of Marine/Energy Insurance, but it's built primarily for commercial marine and energy risk. For a personal boatowners or yacht policy, some carriers accept the 31, others just want the declarations page or a liability cert. Check the specific carrier's preference before issuing.',
+    note: 'ACORD 31 is the standard Certificate of Marine/Energy Insurance, but it\'s built primarily for commercial marine and energy risk. For a personal boatowners or yacht policy, some carriers accept the 31, others just want the declarations page or a liability cert. Check the specific carrier\'s preference before issuing.',
     directives: [
       'Confirm with the carrier which document they actually want',
       'Larger yacht policies are more likely to expect the 31 than a small boatowners policy'
     ],
     flag: null,
-    handledBy: 'Often lives with a High Value / Specialty department - but here's what would need to be issued if it lands on your desk.'
+    handledBy: 'Often lives with a High Value / Specialty department - but here\'s what would need to be issued if it lands on your desk.'
   },
   'watercraft:other': {
     form: 'Manual review',
     title: 'Purpose unclear',
     confidence: 'low',
-    note: 'Confirm the requester's interest before choosing what to send.',
+    note: 'Confirm the requester\'s interest before choosing what to send.',
     directives: ['Ask what the document needs to show and to whom'],
     flag: null
   },
@@ -714,7 +714,7 @@ const resultMap = {
     note: 'ACORD 20 provides proof of liability coverage for aircraft or aviation-related operations - the right form when an airport, hangar, or tie-down agreement is asking for liability evidence. Applies the same way for a personal or a commercial aircraft policy.',
     directives: ['Not the same as proof of hull/physical damage coverage - that's the 21'],
     flag: null,
-    handledBy: 'Often lives with a High Value / Specialty department - but here's what would need to be issued if it lands on your desk.'
+    handledBy: 'Often lives with a High Value / Specialty department - but here\'s what would need to be issued if it lands on your desk.'
   },
   'aircraft:hull': {
     form: 'ACORD 21',
@@ -723,7 +723,7 @@ const resultMap = {
     note: 'ACORD 21 evidences coverage on the aircraft itself - the right form for a lender or lienholder confirming physical damage/hull coverage exists. Applies the same way for a personal or a commercial aircraft policy.',
     directives: ['Not the same as proof of liability coverage - that's the 20'],
     flag: null,
-    handledBy: 'Often lives with a High Value / Specialty department - but here's what would need to be issued if it lands on your desk.'
+    handledBy: 'Often lives with a High Value / Specialty department - but here\'s what would need to be issued if it lands on your desk.'
   },
   'aircraft:other': {
     form: 'Manual review',
@@ -737,10 +737,10 @@ const resultMap = {
     form: 'ACORD 28',
     title: 'Evidence of Commercial Property Insurance',
     confidence: 'high',
-    note: 'A lender financing the construction wants proof the builders risk property coverage exists - that's an ACORD 28, the commercial-property evidence form. ACORD 28 carries more detail than the 27 (business income, ordinance or law, terrorism, coinsurance), which is typically what a construction lender wants to see.',
+    note: 'A lender financing the construction wants proof the builders risk property coverage exists - that\'s an ACORD 28, the commercial-property evidence form. ACORD 28 carries more detail than the 27 (business income, ordinance or law, terrorism, coinsurance), which is typically what a construction lender wants to see.',
     directives: ['If they also want liability evidence, pair it with a 25'],
     flag: null,
-    handledBy: 'Practice on who issues this varies by agency - some route Builders Risk to Commercial Lines, others keep it in Personal. That's a judgment call, not a fixed rule.'
+    handledBy: 'Practice on who issues this varies by agency - some route Builders Risk to Commercial Lines, others keep it in Personal. That\'s a judgment call, not a fixed rule.'
   },
   'buildersrisk:gc': {
     form: 'ACORD 25 (+ ACORD 28 if property evidence is also needed)',
@@ -749,7 +749,7 @@ const resultMap = {
     note: 'A general contractor or municipality asking for proof on a construction project is almost always after liability evidence - a 25. If a lender is also involved, add a 28 for the property side.',
     directives: ['Confirm whether property evidence is also being requested'],
     flag: null,
-    handledBy: 'Practice on who issues this varies by agency - some route Builders Risk to Commercial Lines, others keep it in Personal. That's a judgment call, not a fixed rule.'
+    handledBy: 'Practice on who issues this varies by agency - some route Builders Risk to Commercial Lines, others keep it in Personal. That\'s a judgment call, not a fixed rule.'
   },
   'buildersrisk:other': {
     form: 'Manual review',
@@ -761,9 +761,9 @@ const resultMap = {
   },
   'auto:lienholder': {
     form: 'ID card + declarations page (single vehicle) - or ACORD 27 + ACORD 101 (multiple vehicles)',
-    title: 'Depends on whether it's one vehicle or several',
+    title: 'Depends on whether it\'s one vehicle or several',
     confidence: 'medium',
-    note: 'For a single financed vehicle, there's no dedicated ACORD evidence form - the insurance ID card plus a declarations page showing comp/collision deductibles typically satisfies the lienholder. But if the household policy covers multiple vehicles and the lienholder needs all of them evidenced on one document, that's a different form entirely: use ACORD 27 as the primary evidence form, with an ACORD 101 (Additional Remarks Schedule) attached listing each vehicle individually.',
+    note: 'For a single financed vehicle, there\'s no dedicated ACORD evidence form - the insurance ID card plus a declarations page showing comp/collision deductibles typically satisfies the lienholder. But if the household policy covers multiple vehicles and the lienholder needs all of them evidenced on one document, that\'s a different form entirely: use ACORD 27 as the primary evidence form, with an ACORD 101 (Additional Remarks Schedule) attached listing each vehicle individually.',
     directives: [
       'Single vehicle: make sure comp/collision deductibles are visible on what you send',
       'Multiple vehicles: on the ACORD 27, in the property description area, state "See attached ACORD 101 for a complete schedule of covered vehicles including years, makes, models, VINs, and physical damage deductibles," then list each vehicle's full details on the 101',
@@ -776,7 +776,7 @@ const resultMap = {
     form: 'Manual review',
     title: 'Confirm the request first',
     confidence: 'low',
-    note: 'Personal auto requests from parties other than a lienholder vary widely - confirm what's actually being asked for before sending anything.',
+    note: 'Personal auto requests from parties other than a lienholder vary widely - confirm what\'s actually being asked for before sending anything.',
     directives: ['Ask what the document needs to show and to whom'],
     flag: null
   },
@@ -784,7 +784,7 @@ const resultMap = {
     form: 'Declarations page',
     title: 'No dedicated evidence form',
     confidence: 'medium',
-    note: 'There's no ACORD evidence-of-insurance form specific to personal umbrella policies. A copy of the declarations page is typically what satisfies this kind of request.',
+    note: 'There\'s no ACORD evidence-of-insurance form specific to personal umbrella policies. A copy of the declarations page is typically what satisfies this kind of request.',
     directives: ['Confirm underlying policy limits are also being asked for'],
     flag: null
   },
@@ -792,7 +792,7 @@ const resultMap = {
     form: 'Manual review',
     title: 'Confirm the request first',
     confidence: 'low',
-    note: 'Confirm the requester's interest before choosing what to send - umbrella requests are uncommon enough that there's no reliable default.',
+    note: 'Confirm the requester\'s interest before choosing what to send - umbrella requests are uncommon enough that there\'s no reliable default.',
     directives: ['Ask what the document needs to show and to whom'],
     flag: null
   },
@@ -825,7 +825,7 @@ const resultMap = {
     form: 'ACORD 25',
     title: 'Certificate of Liability Insurance',
     confidence: 'high',
-    note: 'A general contractor's subcontractor agreement commonly asks for Additional Insured status and a Waiver of Subrogation, sometimes split between ongoing and completed operations.',
+    note: 'A general contractor\'s subcontractor agreement commonly asks for Additional Insured status and a Waiver of Subrogation, sometimes split between ongoing and completed operations.',
     directives: [
       'Confirm exactly what the subcontract requires before issuing',
       'Only reflect AI/WOS status the policy actually has - see practice notes above'
@@ -844,7 +844,7 @@ const resultMap = {
     form: 'ACORD 24, or ACORD 28 for larger/more complex risk',
     title: 'Evidence of Property Insurance (Commercial)',
     confidence: 'high',
-    note: 'ACORD 24 covers standard commercial property evidence. ACORD 28 carries the same information plus additional detail a lender may want on a larger or more complex risk - business income, ordinance or law, terrorism, coinsurance. Ask which one the lender's checklist actually calls for.',
+    note: 'ACORD 24 covers standard commercial property evidence. ACORD 28 carries the same information plus additional detail a lender may want on a larger or more complex risk - business income, ordinance or law, terrorism, coinsurance. Ask which one the lender\'s checklist actually calls for.',
     directives: [
       'When unsure which the lender wants, ask - it's a five-minute question that avoids a second round trip',
       'Neither form is a substitute for reading the loan documents' actual insurance requirements'
@@ -855,7 +855,7 @@ const resultMap = {
     form: 'Likely ACORD 25, verify first',
     title: 'Probably a liability request, not property evidence',
     confidence: 'medium',
-    note: 'A commercial landlord usually wants proof of the tenant's liability coverage (naming them as certificate holder or additional insured), not evidence of the tenant's own property coverage - unless the landlord specifically holds an insurable interest in the space (a net lease arrangement, for instance).',
+    note: 'A commercial landlord usually wants proof of the tenant\'s liability coverage (naming them as certificate holder or additional insured), not evidence of the tenant\'s own property coverage - unless the landlord specifically holds an insurable interest in the space (a net lease arrangement, for instance).',
     directives: [
       'Confirm exactly what the landlord is asking to see before choosing a form',
       'If it turns out to be a liability request, this is really a gl:landlord situation - see that entry'
@@ -872,9 +872,9 @@ const resultMap = {
   },
   'comauto:lienholder': {
     form: 'ACORD 23 (single unit) - or ACORD 28 + ACORD 101 (fleet / multiple units)',
-    title: 'Depends on whether it's one unit or several',
+    title: 'Depends on whether it\'s one unit or several',
     confidence: 'high',
-    note: 'ACORD 23 is the standard certificate for a single financed or leased vehicle or piece of equipment - it isn't built for blanket coverage or multiple units at once. For a fleet or multiple vehicles/equipment on one policy, use ACORD 28 (Evidence of Commercial Property Insurance) as the primary certificate instead, with an ACORD 101 (Additional Remarks Schedule) attached to list every unit individually. The same approach applies to multiple properties under one policy.',
+    note: 'ACORD 23 is the standard certificate for a single financed or leased vehicle or piece of equipment - it isn\'t built for blanket coverage or multiple units at once. For a fleet or multiple vehicles/equipment on one policy, use ACORD 28 (Evidence of Commercial Property Insurance) as the primary certificate instead, with an ACORD 101 (Additional Remarks Schedule) attached to list every unit individually. The same approach applies to multiple properties under one policy.',
     directives: [
       'Single unit: confirm the exact vehicle/equipment description matches the loan or lease documents',
       'Fleet/multiple units: on the ACORD 28, check the appropriate physical damage boxes (Collision / Other Than Collision), then in the property description area state "See attached ACORD 101 for a complete schedule of covered vehicles including years, makes, models, VINs, and physical damage deductibles," and list each vehicle's full details on the 101',
@@ -886,7 +886,7 @@ const resultMap = {
     form: 'ACORD 25',
     title: 'Certificate of Liability Insurance',
     confidence: 'medium',
-    note: 'When a contract (rather than a lender) is asking for proof of commercial auto liability, that's typically shown on the standard ACORD 25 alongside General Liability, not a separate auto-specific certificate.',
+    note: 'When a contract (rather than a lender) is asking for proof of commercial auto liability, that\'s typically shown on the standard ACORD 25 alongside General Liability, not a separate auto-specific certificate.',
     directives: [
       'Confirm which specific coverage the contract requires before issuing',
       'Confirm which lines the client wants shown if the request doesn't say - see practice notes above'
@@ -897,7 +897,7 @@ const resultMap = {
     form: 'Manual review',
     title: 'Confirm the request first',
     confidence: 'low',
-    note: 'Confirm what's actually being asked for before sending anything.',
+    note: 'Confirm what\'s actually being asked for before sending anything.',
     directives: ['Ask what the document needs to show and to whom'],
     flag: null
   },
@@ -913,15 +913,15 @@ const resultMap = {
     form: 'Manual review',
     title: 'Purpose unclear',
     confidence: 'low',
-    note: 'Confirm the requester's interest before choosing what to send.',
+    note: 'Confirm the requester\'s interest before choosing what to send.',
     directives: ['Ask what the document needs to show and to whom'],
     flag: null
   },
   'workcomp:gc': {
-    form: 'ACORD 25 (Workers' Compensation section)',
+    form: 'ACORD 25 (Workers\' Compensation section)',
     title: 'Shown alongside GL/Auto, not a standalone WC certificate',
     confidence: 'medium',
-    note: 'There's no dedicated ACORD certificate exclusively for workers' compensation the way there is for property or liability - WC is typically shown as a coverage line on the standard ACORD 25, alongside GL and auto.',
+    note: 'There\'s no dedicated ACORD certificate exclusively for workers\' compensation the way there is for property or liability - WC is typically shown as a coverage line on the standard ACORD 25, alongside GL and auto.',
     directives: [
       'Confirm this policy is standard market before issuing - see the binding/cert-authority check above if it's a pool or fund policy',
       'Verify the policy carries statutory limits before marking that box',
@@ -934,7 +934,7 @@ const resultMap = {
     form: 'Manual review',
     title: 'Confirm the request first',
     confidence: 'low',
-    note: 'Confirm what's actually being asked for before sending anything.',
+    note: 'Confirm what\'s actually being asked for before sending anything.',
     directives: ['Ask what the document needs to show and to whom'],
     flag: null
   },
@@ -953,7 +953,7 @@ const resultMap = {
     form: 'Manual review',
     title: 'Confirm the request first',
     confidence: 'low',
-    note: 'Confirm what's actually being asked for before sending anything.',
+    note: 'Confirm what\'s actually being asked for before sending anything.',
     directives: ['Ask what the document needs to show and to whom'],
     flag: null
   },
@@ -961,7 +961,7 @@ const resultMap = {
     form: 'ACORD 31',
     title: 'Certificate of Marine / Energy Insurance',
     confidence: 'high',
-    note: 'ACORD 31 is built specifically for commercial marine and energy risk, so it's a clean fit here - unlike the personal watercraft case, where carrier practice varies more.',
+    note: 'ACORD 31 is built specifically for commercial marine and energy risk, so it\'s a clean fit here - unlike the personal watercraft case, where carrier practice varies more.',
     directives: ['Confirm whether hull, liability, or both need to be shown'],
     flag: null
   },
@@ -969,7 +969,7 @@ const resultMap = {
     form: 'Manual review',
     title: 'Purpose unclear',
     confidence: 'low',
-    note: 'Confirm the requester's interest before choosing what to send.',
+    note: 'Confirm the requester\'s interest before choosing what to send.',
     directives: ['Ask what the document needs to show and to whom'],
     flag: null
   }
